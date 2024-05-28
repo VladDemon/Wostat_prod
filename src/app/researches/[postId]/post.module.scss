@@ -1,0 +1,128 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+.postContainer {
+    color: black;
+    font-family: Lexend Deca;
+    .postFullTitle {
+        font-size: 50px;
+        font-weight: 700;
+        width: 773px;
+        @media (max-width: 988px) {
+            font-size: 40px;
+        }
+        @media (max-width: 744px) {
+            width: 488px;
+            height: 120px;
+            font-size: 30px;
+        }
+        @media (max-width: 544px) {
+            width: 260px;
+            height: 100px;
+            font-size: 20px;
+        }
+    }
+    .postDateCat {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 20px 0px 60px;
+        color: rgb(118, 118, 178);
+    }
+    .postContainer_content {
+        display: flex;
+        position: relative;
+        .postImg {
+            position: absolute;
+            top :0;
+            right: 5vw;
+            @media (max-width: 1000px) {
+                width: 333.13px;
+                height: 203.51px;
+                right: 0;
+            }
+            @media (max-width: 744px) {
+                width: 488px;
+                height: 298px;
+            }
+            @media (max-width: 544px) {
+                width: 260px;
+                height: 159px;
+            }
+        }
+        @media (max-width: 744px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .postSummary {
+        h1 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        @media (max-width: 988px) {
+            .postParagraph1 {
+                width: 311px;
+                height: 218px;
+            }
+        }
+        .postPar1 {
+            width: 565px;
+            height: 180px;
+            color: rgba(37, 49, 60, 0.9);
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 20px;
+            @media (max-width: 988px) {
+                width: 311px;
+                height: 270px;
+                font-size: 14px;
+            }
+            @media (max-width: 744px) {
+                width: 488px;
+                height: 170px;
+            }
+            @media (max-width: 544px) {
+                width: 260px;
+                height: 320px;
+            }
+        }
+        .otherPar {
+            width: 872px;
+            margin-bottom: 20px;
+            color: rgba(37, 49, 60, 0.9);
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: left;
+            @media (max-width: 988px) {
+                font-size: 14px;
+                width: 549px;
+                height: 100px;
+                margin-bottom: 40px;
+            }
+            @media (max-width: 744px) {
+                width: 488px;
+                height: 125px;
+            }
+            @media (max-width: 544px) {
+                width: 260px;
+                height: 230px;
+            }
+        }
+        @media (max-width: 1000px) {
+            .postPar2 {
+                width: 549px;
+                height: 150px;
+            }
+        }
+        @media (max-width : 744px) {
+            margin-top: 300px;
+        }
+        @media (max-width: 544px) {
+            margin-top: 180px;
+            .postPar2 {
+                width: 260px;
+                height: 320px;
+            }
+        }
+
+    }
+}

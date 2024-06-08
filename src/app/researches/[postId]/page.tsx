@@ -11,11 +11,7 @@ const post = {
   title : "",
   id: "",
   fullTitle : "",
-  fullSummary1 : "",
-  fullSummary2 : "",
-  fullSummary3 : "",
-  fullSummary4 : "",
-  fullSummary5 : "",
+  fullSummary : "",
   summary : "",
   image : "",
   category : "",
@@ -42,7 +38,6 @@ export default function PostsID() {
         console.error(e);
       }
     };
-
     fetchPost(postId);
   }, [postId]); 
   return (
@@ -53,11 +48,7 @@ export default function PostsID() {
           <p className={`${style.postDateCat}`}>{data.category}  |  {data.date}</p>
           <div className={`${style.postContainer_content}`}>
             <div className={`${style.postSummary}`}>
-              <p className={`${style.postPar1} ${style.postParagraph1}`}>{data.fullSummary1}</p>
-              <p className={`${style.postPar1} ${style.postPar2}`}>{data.fullSummary2}</p>
-              <p className={`${style.otherPar}`}>{data.fullSummary3}</p>
-              <p className={`${style.otherPar}`}>{data.fullSummary4}</p>
-              <p className={`${style.otherPar}`}>{data.fullSummary5}</p>
+              <div className={`${style.postPar1 } ${style.postParagraph1}`}>{data.fullSummary.split('\\n').map( (elem, key) => <p key={key} className={`${style.postPar} ${(key < 3 ? "" : style.otherPar)}`}>{elem}</p> )}</div>
             </div>
             <Image className={`${style.postImg}`} src={data.image} alt='img' width={612} height={100}/>
           </div>

@@ -17,6 +17,10 @@ export default function Header() {
   };
   return (
     <header className={`header ${!isMain ? 'header-other' : ''}`}>
+      {isMain ? <Image src={"/images/header/header__home.png"} alt='header' sizes='200vw' fill quality={100} style={{
+        objectFit: 'cover',
+        zIndex: -100,
+      }}/> : null}
       <div className="container">
         <div className="header-nav">
           <Link href={"/"} className="logo">WOSTAT<span className='text-indigo-500'>.</span></Link>
@@ -24,11 +28,11 @@ export default function Header() {
             <div className="navigation">
               <ul className='nav-list'>
                 <div className="list-links">
-                  <li><a href="#!" className='nav-link'>About</a></li>
-                  <li><a href="#!" className='nav-link'>Product</a></li>
-                  <li><Link href={'/researches'} className='nav-link'>Researches</Link></li>
+                  <li className='hover:-translate-y-1 duration-150'><a href="#!" className='nav-link'>About</a></li>
+                  <li className='hover:-translate-y-1 duration-150'><a href="#!" className='nav-link'>Product</a></li>
+                  <li className='hover:-translate-y-1 duration-150'><Link href={'/researches'} className='nav-link'>Researches</Link></li>
                 </div>
-                <button className='price-btn'>Price</button>
+                <button className='price-btn hover:-translate-y-1 hover:shadow-xl duration-150'>Price</button>
               </ul>
             </div>
           </nav>
@@ -43,10 +47,10 @@ export default function Header() {
               <IoCloseOutline size={64} className={`${styles.close_btn}`}/>
             </button>
             <nav className={styles.navMenu}>
-              <Link href="#about" className={styles.navLink}>About</Link>
-              <Link href="#product" className={styles.navLink}>Product</Link>
-              <Link href="/researches" className={styles.navLink}>Researches</Link>
-              <Link href="#price" className={styles.navLink}>Price</Link>
+              <Link onClick={toggleMenu} href="#about" className={styles.navLink}>About</Link>
+              <Link onClick={toggleMenu} href="#product" className={styles.navLink}>Product</Link>
+              <Link onClick={toggleMenu} href="/researches" className={styles.navLink}>Researches</Link>
+              <Link onClick={toggleMenu} href="#price" className={styles.navLink}>Price</Link>
             </nav>
           </div>
         )}

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from 'next/link';
+
 export default function PubliclyResearch() {
   return (
     <div className="publicly-research">
@@ -86,7 +88,7 @@ export default function PubliclyResearch() {
                             </div>
 
                         </div>    
-                        <a href="" className='more-research'>More research <img src="/images/main/arrow.svg" alt="" /></a>
+                        <Link href={"/researches"} className='more-research'><p>More research</p> <img src="/images/main/arrow.svg" alt="" /></Link>
                     </div>
                 </div>
             </div>

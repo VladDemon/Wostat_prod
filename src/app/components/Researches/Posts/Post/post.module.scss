@@ -8,6 +8,10 @@
         width: 311px;
         height: 440px;
     }
+    transition: .4s linear;
+    &:hover {
+        transform: translateY(-10px);
+    }
     .bodyPost {
         padding: 20.5px 0px 0px 10.5px;
         width: 377px;

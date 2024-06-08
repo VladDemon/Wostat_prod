@@ -103,7 +103,11 @@ export default function MainDiscover() {
                                 </div>
                                 <div className="activity">
                                     <h1>Activity</h1>
-                                    <Image src="/images/main/activity.svg" width={269.52} height={83.03} alt="graph" />
+                                    <Image src="/images/main/activitys.png" width={269.52} height={83.03} alt="graph" style={
+                                        {
+                                            objectFit: 'cover',
+                                        }
+                                    }/>
                                 </div>
                             </div>
                             <div className="monthly_mentors">
@@ -116,7 +120,7 @@ export default function MainDiscover() {
                                                     <Image src={'/images/main/mentors1.svg'} width={30.66} height={30.66} alt='mentor'/>
                                                     <div className="mentor-1__text">
                                                         <h1 className='mentor-name'>Curious George</h1>
-                                                        <div className="uiUx flex flex-col">
+                                                        <div className="uiUx mt-1">
                                                             <span>UI UX</span>
                                                             <span>Design</span>
                                                         </div>
@@ -143,7 +147,7 @@ export default function MainDiscover() {
                                                         <Image src={'/images/main/mentor2.svg'} width={30.66} height={30.66} alt='mentor'/>
                                                         <div className="mentor-1__text">
                                                             <h1 className='mentor-name'>Abraham Lincoln</h1>
-                                                            <div className="uiUx flex flex-row gap-1">
+                                                            <div className="uiUx flex flex-row gap-1 mt-4">
                                                                 <span>3D</span>
                                                                 <span>Design</span>
                                                             </div>

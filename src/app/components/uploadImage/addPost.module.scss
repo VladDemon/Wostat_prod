@@ -1,0 +1,23 @@
+.addPostContent {
+    margin: 125px 125px 0 125px;
+    .addPostForm {
+        .postForm {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            input {
+                padding: 20px;
+                border-radius: 4px;
+            }
+            .postFromContent {
+                padding: 20px;
+                border-radius: 4px;
+                .postFormBtn {
+                    color: rebeccapurple;
+                }
+            }
+
+        }
+    }
+}

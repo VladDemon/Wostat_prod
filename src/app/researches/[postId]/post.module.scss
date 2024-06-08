@@ -53,6 +53,10 @@
         }
     }
     .postSummary {
+        height: 800px;
+        @media (max-width: 544px) {
+            height:1500px;
+        }
         h1 {
             font-size: 18px;
             font-weight: 400;
@@ -71,6 +75,10 @@
             letter-spacing: 0%;
             text-align: left;
             margin-bottom: 20px;
+            margin-bottom: 100px;
+            p {
+                margin-bottom:20px;
+            }
             @media (max-width: 988px) {
                 width: 311px;
                 height: 270px;

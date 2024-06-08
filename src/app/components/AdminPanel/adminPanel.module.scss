@@ -1,0 +1,42 @@
+.adminPanel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #DEE1E6;
+    .adminPanelHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        height: 100px;
+        .adminForm {
+            display: flex;
+            gap: 40px;
+            .adminBtn {
+                // 
+            }
+            .adminFormTopText {
+                align-self: center;
+            }
+        }
+    }
+    .addPost {
+        color: black;
+    }
+    .editConntent {
+        color: black;
+    }
+    .adminPanelMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 50px;
+        position: relative;
+        .menuItem {
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}

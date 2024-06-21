@@ -1,0 +1,21 @@
+.seoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    .seoContent_text {
+        justify-content: center;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    button {
+        color: black;
+        // display: flex;
+        justify-content: center;
+        align-self: center;
+        border: 2px solid black;
+        width: 100px;
+    }
+}

@@ -11,12 +11,10 @@ import { EditSeoContext } from '@/utils/Providers/editSeoProvider'
 // export const EditSeoContext = React.createContext([]);
 
 
-export default function EditSeo() {
 
-  const [pageContent, setPageContent] = useState("");
-
+export default function EditSeo() {  const [pageContent, setPageContent] = useState<string>(" ");
   return (
-    <div className="EditSeo">
+    <div className={`${EditSeo}`}>
         <EditSeoContext.Provider value={{pageContent, setPageContent}}>
             <EditSeoHeader/>
             <EditSeoMain/>

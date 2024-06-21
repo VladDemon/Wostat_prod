@@ -12,9 +12,7 @@ import { EditSeoContext } from '@/utils/Providers/editSeoProvider';
 
 export default function EditSeoHeader() {
     const context = useContext(EditSeoContext);
-    // const [pageContent, setPageContent] = useState<string>();
     const { setPageContent } = context!;
-    // const [pageContent, setPageContent] = useContext(EditSeoContext);
     const [selectedOption, setSelectedOption] = useState("main");
     async function getPageContent () {
         const seoContent = await fetch("/api/getPageSeoContent", {
@@ -25,12 +23,8 @@ export default function EditSeoHeader() {
               body: JSON.stringify(selectedOption),
         })
         const response = await seoContent.json();
-        // console.log(response);
         setPageContent(response);
-        // console.log(pageContent);
     }
-    // const pageContent = useContext(EditSeoContext)
-    
   return (
         <header className={`${style.header} text-black`}>
             <form action={getPageContent} className={`${style.header_from}`}>

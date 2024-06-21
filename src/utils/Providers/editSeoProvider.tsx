@@ -3,6 +3,7 @@ import React, { createContext, useState, ReactNode } from 'react';
 interface EditSeoContextProps {
   pageContent: string | undefined;
   setPageContent: (content: string) => void;
+  message? : string
 }
 
 export const EditSeoContext = createContext<EditSeoContextProps | undefined>(undefined);

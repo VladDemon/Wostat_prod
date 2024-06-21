@@ -21,17 +21,15 @@ export default async function AdminPanel() {
         </form>
       </div>
       <div className={`${style.adminPanelMenu}`}>
+        <h1 className='text-black'>Add Post</h1>
         <div className={`${style.addPost} ${style.menuItem}`}>
             <form action="">
-              <label>
-              </label>
               <Link href={`/admin/AddPost`} className={`${style.addPostLink} `}><MdPostAdd size={100}/></Link>
             </form>
         </div>
+        <h1 className='text-black'>Edit Seo</h1>
         <div className={`${style.editConntent} ${style.menuItem}`}>
             <form action="">
-              <label htmlFor="">
-              </label>
               <Link href={'/admin/EditSeo'} className={`${style.editContentLink} `}><FaRegEdit size={90}/></Link>
             </form>
         </div>

@@ -3,15 +3,12 @@ import { useState } from "react";
 
 import style from './addPost.module.scss'
 
-import Image from "next/image";
-
 export const UploadImage = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [title, setTitle] = useState<string>("");
     const [category, setCategory] = useState("");
     const [contentText, setContentText] = useState("");
     const [summary, setSummary] = useState("");
-    const [uploaded, setUploaded] = useState();
     
     const handleChange = ( e ) => {
         console.log(e.target.files)
@@ -45,7 +42,6 @@ export const UploadImage = () => {
             <textarea placeholder='contentText   IF you want to move text to a new line write "\\n"' required className={`${style.postFromContent}`} name='contentText' value={contentText} onChange={(e) => {return setContentText(e.target.value)}}/>
 
             <button className={`${style.postFormBtn}`}>AddPost</button>
-
           </form>
         </div>
       </div>

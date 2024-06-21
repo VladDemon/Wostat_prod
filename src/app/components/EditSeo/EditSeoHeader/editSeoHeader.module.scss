@@ -1,0 +1,24 @@
+.header {
+    height: 70px;
+    background-color: #DEE1E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header_from {
+        display: flex;
+        gap: 50px;
+        select {
+            padding: 5px 10px 5px 10px ;
+            text-align: center;
+            border-radius: 5px;
+            option {
+                padding: 20px;
+            }
+        }
+        button {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}

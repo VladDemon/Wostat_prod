@@ -35,7 +35,7 @@ function Footer() {
             </div>
             <div className="rightSide-us">
               <h1 className='us-text'><p>Contact Us</p></h1>
-              <p className='us-link'><p>info@wostat.com</p></p>
+              <h1 className='us-link'><p>info@wostat.com</p></h1>
             </div>
           </div>
         </div>

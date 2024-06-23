@@ -32,7 +32,7 @@ export default function Header() {
                   <li className='hover:-translate-y-1 duration-150'><a href="#!" className='nav-link'>Product</a></li>
                   <li className='hover:-translate-y-1 duration-150'><Link href={'/researches'} className='nav-link'>Researches</Link></li>
                 </div>
-                <button className='price-btn hover:-translate-y-1 hover:shadow-xl duration-150'>Price</button>
+                <button className='price-btn hover:-translate-y-1 hover:shadow-xl duration-150' onClick={e => {window.scrollTo({top : 3200, behavior : 'smooth'})}}>Price</button>
               </ul>
             </div>
           </nav>

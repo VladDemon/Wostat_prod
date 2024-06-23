@@ -1,19 +1,15 @@
 import React, { createContext, useState, ReactNode } from 'react';
 
+interface PageContent {
+  readPage : string;
+  filePath : string;
+}
+
+
 interface EditSeoContextProps {
-  pageContent: string | undefined;
-  setPageContent: (content: string) => void;
+  pageContent: PageContent | undefined;
+  setPageContent: (content: PageContent) => void;
   message? : string
 }
 
 export const EditSeoContext = createContext<EditSeoContextProps | undefined>(undefined);
-
-// export const EditSeoProvider = ({ children }: { children: ReactNode }) => {
-//   const [pageContent, setPageContent] = useState<string | undefined>(undefined);
-
-//   return (
-//     <EditSeoContext.Provider value={{ pageContent, setPageContent }}>
-//       {children}
-//     </EditSeoContext.Provider>
-//   );
-// };

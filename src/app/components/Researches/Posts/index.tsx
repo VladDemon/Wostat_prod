@@ -38,7 +38,6 @@ export default function Researches() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  // console.log(screenSize);
 
   const fetchPosts = async () => {
     try {
@@ -47,7 +46,6 @@ export default function Researches() {
         throw new Error('Network response was not ok');
       }
       const newPosts: PostData[] = await response.json();
-      // console.log(response.json());
       setScreenSize((prevSize) => {
         if (prevSize < 1300 && prevSize > 746) {
           return prevSize;
@@ -61,8 +59,6 @@ export default function Researches() {
         filteredPosts = newPosts.slice(0, 8);
       }
       setPosts(filteredPosts);
-      // if(typeof newPosts === 'object')
-      //   setPosts(prevPosts => [...prevPosts, ...newPosts]);
     } catch (error) { 
       console.error('Failed to fetch posts:', error);
     }

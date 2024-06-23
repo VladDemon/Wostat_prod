@@ -3,7 +3,6 @@ import React from 'react'
 
 import Image from 'next/image';
 import Link from 'next/link';
-// import Footer from '../Footer'
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -34,7 +33,6 @@ export default function HomeMain() {
 
   return (
     <main className='main'>
-        {/* <MainDiscover/> */}
         <div className="mainDiscover">
         <div className="mainDiscover__container">
             <div className='container'>
@@ -259,7 +257,6 @@ export default function HomeMain() {
             </div>
         </div>
     </div>
-        {/* <MainTeam/> */}
         <div className="mainTeam">
           <div className="container">
               <div className="mainTeam-content">
@@ -274,7 +271,6 @@ export default function HomeMain() {
               </div>
           </div>
       </div>
-        {/* <MainPartners/> */}
         <div className='mainPartners'>
           <div className="container">
               <div className="mainPartners-content">
@@ -342,7 +338,6 @@ export default function HomeMain() {
               </div>
           </div>
       </div>
-        {/* <MainCost/> */}
         <div className="maincost">
           <div className="container">
               <div className="maincost-content">
@@ -448,7 +443,6 @@ export default function HomeMain() {
               </div>
           </div>
     </div>
-        {/* <PubliclyResearch/> */}
         <div className="publicly-research">
           <div className="container">
               <div className="publicly-research-content">
@@ -539,7 +533,6 @@ export default function HomeMain() {
               </div>
           </div>
     </div>
-        {/* <Questions/> */}
         <div className="questions">
           <div className="container">
               <div className="questions-content">

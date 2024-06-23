@@ -1,13 +1,7 @@
 'use client'
 
 import React, {useContext, useState} from 'react'
-
 import style from './editSeoHeader.module.scss';
-
-// import { editSeoProvider } from '@/utils/Providers/editSeoProvider';
-
-// import { EditSeoContext } from '..';
-
 import { EditSeoContext } from '@/utils/Providers/editSeoProvider';
 
 export default function EditSeoHeader() {
